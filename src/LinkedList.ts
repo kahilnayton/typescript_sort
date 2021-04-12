@@ -1,10 +1,13 @@
+import {Sorter} from './Sorter'
+
 class Node {
   next: Node | null = null;
 
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
+  // If there is no constructor we don't need to call super()
   head: Node | null = null;
 
   // you can still return whenever you want, but you can't return a value with void
